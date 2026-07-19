@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h2>Date Stats for <span id="currentDate"></span></h2>
+	<table>
+	  <tr>
+	    <td class="td_field"><b>Weekday</b></td>
+		<td class="td_value"><span id="dayOfTheWeek"></span> (<span id="dayNumber"></span>)</td>
+	  </tr>
+	  <tr>
+	    <td class="td_field"><b>Month</b></td>
+		<td class="td_value"><span id="monOfTheYear"></span> (<span id="monNumber"></span>)</td>
+	  </tr>
+	</table>
+	<p>
+	<table>
+	  <thead>
+	    <td class="td_field">&nbsp;</td>
+		<td class="td_value"><b>Current</b></td>
+		<td class="td_value"><b>Remaining</b></td>
+	  <thead>
+	  <tr>
+	    <td class="td_field"><b>Weeks (ISO)</b></td>
+		<td class="td_value"><span id="currentWeek"></span></td>
+		<td class="td_value"><span id="wksUntilEnd"></span></td>
+      </tr>
+	    <td class="td_field"><b>Days in year:</b></td>
+		<td class="td_value"><span id="daysFromStart"></span></td>
+		<td class="td_value"><span id="daysUntilEnd"></span></td>
+	  </tr>
+	  <tr>
+	    <td class="td_field"><b>Days in Q<span id="qtrNumber"></span>:</b></td>
+		<td class="td_value"><span id="daysFromQtrStart"></span></td>
+		<td class="td_value"><span id="daysUntilQtrEnd"></span></td>
+	  </tr>
+	  <tr>
+	    <td class="td_field"><b>Hours in year:</b></td>
+		<td class="td_value"><span id="hoursFromStart"></span></span></td>
+		<td class="td_value"><span id="hoursUntilEnd"></span></td>
+	  </tr>
+	  <tr>
+	    <td class="td_field"><b>Minutes in year:</b></td>
+		<td class="td_value">todo</span></td>
+		<td class="td_value">todo</td>
+	  </tr>
+	</table>
+	<p class="ctr"><small>Weeks start on Monday, week 1 has at least 4 days</small></p>
+	<script src="popup.js"></script>
+  </body>
+</html>
