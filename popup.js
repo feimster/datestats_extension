@@ -65,7 +65,7 @@ Date.prototype.getISOWeek = function() {
 }
 
 Date.prototype.getQuarter = function() {
-  return Math.floor( ( this.getMonth() + 5 ) / 4 );
+  return Math.floor( ( this.getMonth() + 3 ) / 3 );
 }
 
 Date.prototype.getQtrSinceStart = function() {
