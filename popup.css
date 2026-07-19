@@ -1,0 +1,22 @@
+body {
+  width: 300px;
+  min-height: 100px;
+}
+
+table {
+	width: 100%
+}
+
+.td_field {
+  width: 50%;
+  text-align: left;
+}
+
+.td_value {
+  width: 25%;
+  text-align: right;
+}
+
+.ctr {
+  text-align: center;
+}
