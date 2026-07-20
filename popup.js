@@ -68,6 +68,21 @@ Date.prototype.getQuarter = function() {
   return Math.floor( ( this.getMonth() + 3 ) / 3 );
 }
 
+Date.prototype.getQtrOrdinal = function() {
+  var qtrName = "Nothing";
+  switch ( this.getQuarter() ) {
+	  case 1:
+        qtrName = "First";
+	  case 2:
+        qtrName = "Second";
+	  case 3:
+        qtrName = "Third";
+	  case 4:
+        qtrName = "Fourth";
+  }
+  return var qtrName;
+}
+
 Date.prototype.getQtrSinceStart = function() {
   var qtrNbr = this.getQuarter();
   var qtrStartMon = ( qtrNbr * 3 ) - 2;
@@ -103,6 +118,8 @@ document.getElementById('currentWeek').innerHTML = dateCurrent.getISOWeek();
 document.getElementById('wksUntilEnd').innerHTML = dateLastWeek.getISOWeek() - dateCurrent.getISOWeek();
 
 //show quarter info
+document.getElementById('qtrOrd').innerHTML = dateCurrent.getQtrOrdinal();
+document.getElementById('qtrNbr').innerHTML = dateCurrent.getQuarter();
 document.getElementById('qtrNumber').innerHTML = dateCurrent.getQuarter();
 document.getElementById('daysFromQtrStart').innerHTML = dateCurrent.getQtrSinceStart();
 document.getElementById('daysUntilQtrEnd').innerHTML = dateCurrent.getQtrUntilEnd();
